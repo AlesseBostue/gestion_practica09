@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./libs/fontawesome-free-6.7.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>gestion practica 09</title>
+</head>
+
+<body>
+    <div class="main">
+        <form id="registrationForm" action="./php/process_form.php" method="POST" class="needs-validation" novalidate>
+            <div class="card">
+                <div class="card-text">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="user" name="user" placeholder="Username">
+                            <label for="user">Usuario</label>
+                        </div>
+                        <div class="invalid-feedback">Por favor, ingrese su nombre de usuario.</div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Username">
+                            <label for="password">Contrase&ntilde;a</label>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope-open"></i></span>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Username">
+                            <label for="email">Correo</label>
+                        </div>
+                        <div class="invalid-feedback">Por favor, ingrese su correo.</div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-mars-and-venus"></i></span>
+                        <div class="form-floating">
+                            <select class="form-select" id="gender" name="gender" aria-label="Floating label select example">
+                                <option disabled selected>Seleccione un genero</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="3">Otros...</option>
+                            </select>
+                            <label for="gender" class="form-label">Género</label>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary">registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <script src="js/validations.js"></script>
+</body>
+
+</html>
